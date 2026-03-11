@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg,#101828, #1f3149, #0d1826);
+    color: #f2f2f7;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.splash{
+    height: 100dvh;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+
+.profile-container {
+    position: relative;
+    height: 150x;
+    background: linear-gradient(90deg, #79c0ff, #b07cff);
+    width: calc(100% - 40px);
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .profilbild {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+      transition: 0.3s;        
+ 
+
+    img{
+        transform: translate(0px, -50px);
+         box-shadow: 0 16px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.quote{
+    color: #101828;
+      font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+
+}
+
+}
+
+
+.profilbild:hover {
+    transform: scale(1.1);
+    
+    
+
+}
+
+
+.hero h1 {
+    font-size: 4rem;
+    background: linear-gradient(90deg, #79c0ff, #b07cff, #ff7cc8);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    animation: fadeUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    span {
+  transition: color 0.3s, text-shadow 0.3s;
+  color: #fff;
+}
+
+
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease-out 0.2s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blob1,
+.blob2 {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.45;
+    z-index: -1;
+    animation: float 9s ease-in-out infinite alternate;
+}
+
+.blob1 {
+    background: #b07cff;
+    top: 10%;
+    left: -10%;
+}
+
+.blob2 {
+    background: #79c0ff;
+    bottom: 8%;
+    right: -8%;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+.ueber-mich {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cv-item {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 4px solid #79c0ff;
+  
+}
+
+.cv-item span {
+    opacity: 0.6;
+    font-size: 0.95rem;
+   
+}
+
+.kontakt {
+    text-align: center;
+}
+
+.kontakt a {
+    padding: 14px 28px;
+    background: linear-gradient(90deg, #79c0ff, #b07cff);
+    color: #0d1826;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+
+}
+
+.footer {
+    padding: 30px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+.email-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #79c0ff, #b07cff);
+    color: #0d1826;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 0 auto;
+    /* centers the button */
+    width: fit-content
+}
+
+.email-button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+.pdf-button {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #79c0ff;
+    color: #101828;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 0.2s;
+}
+
+.pdf-button:hover {
+    background-color: #4676dd;
+}
+
+.pdf-button.download {
+    background-color: #10b981;
+}
+
+.pdf-button.download:hover {
+    background-color: #059669;
+}
+
